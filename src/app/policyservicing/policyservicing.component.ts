@@ -7,7 +7,7 @@ import { IonContent } from '@ionic/angular';
   styleUrls: ['./policyservicing.component.scss'],
 })
 export class PolicyservicingComponent implements OnInit {
-  @ViewChild(IonContent) content: IonContent;
+  @ViewChild(IonContent, {read: IonContent,static:true}) content: IonContent;
   constructor() { }
 
   ngOnInit() {}

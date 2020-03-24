@@ -7,14 +7,14 @@
     <ion-col size="8">
       <div class="ion-padding-top">
         <ion-avatar class="center">
-          <img src="https://placekitten.com/300/300" class="avatar-img">
+          <img [src]="userinfo.img" class="avatar-img">
         </ion-avatar>
       </div>
       <div>
-        <p class="center greetings">Good Afternoon</p>
+        <p class="center greetings">{{ greetings }}</p>
       </div>
       <div>
-        <h1 class="center full-name">Chu Ying, Rebecca</h1>
+        <h1 class="center full-name">{{ userinfo.name }}</h1>
       </div>
     </ion-col>
 
