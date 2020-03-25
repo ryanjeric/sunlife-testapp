@@ -18,7 +18,7 @@ ion-card-title{
     color:#4a7295;
 }
 .policies_hkd{
-    padding: 0 16px;
+    padding: 0 11px;
 }
 
 .border-orange{
@@ -36,6 +36,7 @@ ion-card-title{
     }
     p{
         text-align: center;
+        color: #eaab00;
     }
     ion-icon{
         text-align: center;
@@ -43,4 +44,9 @@ ion-card-title{
         font-weight: bolder;
         color:#fff; 
     }
+}
+.text-muted{
+    text-align: center;
+    color: rgb(121, 121, 121);
+    font-size: small;
 }

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ApiService } from '../services/api.service';
 
 @Component({
   selector: 'app-allpolicies',
@@ -7,8 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AllpoliciesComponent implements OnInit {
 
-  constructor() { }
-
-  ngOnInit() {}
+  constructor(private apiService:ApiService) { }
+  allPolicies:any = {};
+  ngOnInit() {
+    this.allPolicies =this.apiService.getAllpolicies();
+  }
 
 }

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ApiService } from '../../services/api.service';
 
 @Component({
   selector: 'app-coverage',
@@ -7,8 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CoverageComponent implements OnInit {
 
-  constructor() { }
-
-  ngOnInit() {}
+  constructor(private apiService:ApiService) { }
+  coverage:any = {};
+  ngOnInit() {
+    this.coverage = this.apiService.getCoverage();
+  }
 
 }

@@ -1,5 +1,5 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-import { IonicModule } from '@ionic/angular';
+import { NO_ERRORS_SCHEMA  } from '@angular/core';
 
 import { CoverageComponent } from './coverage.component';
 
@@ -10,7 +10,7 @@ describe('CoverageComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [ CoverageComponent ],
-      imports: [IonicModule.forRoot()]
+      schemas: [NO_ERRORS_SCHEMA]
     }).compileComponents();
 
     fixture = TestBed.createComponent(CoverageComponent);

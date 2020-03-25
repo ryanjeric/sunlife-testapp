@@ -1,5 +1,5 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-import { IonicModule } from '@ionic/angular';
+import { NO_ERRORS_SCHEMA  } from '@angular/core';
 
 import { PolicyservicingComponent } from './policyservicing.component';
 
@@ -10,7 +10,7 @@ describe('PolicyservicingComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [ PolicyservicingComponent ],
-      imports: [IonicModule.forRoot()]
+      schemas: [NO_ERRORS_SCHEMA]
     }).compileComponents();
 
     fixture = TestBed.createComponent(PolicyservicingComponent);

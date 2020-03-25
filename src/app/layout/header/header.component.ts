@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
-import { UsersService } from '../../services/users.service'
+import { ApiService } from '../../services/api.service';
 
 @Component({
   selector: 'app-header',
@@ -9,13 +8,13 @@ import { UsersService } from '../../services/users.service'
 })
 export class HeaderComponent implements OnInit {
 
-  constructor(private usersService:UsersService) { }
+  constructor(private apiService:ApiService) { }
   greetings:string = 'Good Afternoon';
   userinfo:any = {};
   ngOnInit() {
     let time = new Date().getHours();
     this.greetings = 'Good '+ (time < 12 ? 'Morning' : time < 18 ? 'Afternoon' : 'Evening');
-    this.userinfo = this.usersService.getUserinfo();
+    this.userinfo = this.apiService.getUserinfo();
   }
 
 }
